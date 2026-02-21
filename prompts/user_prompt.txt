@@ -1,0 +1,7 @@
+Analyze the following inbound customer message and return a structured JSON
+according to the provided schema.
+
+Customer message:
+"""
+{{customer_message}}
+"""
