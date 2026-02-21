@@ -1,3 +1,11 @@
+# Prompt A/B Testing Case Study
+
+This repository demonstrates an A/B test of two LLM prompts
+using the same input text about the platypus to evaluate
+output quality, structure, and stability.
+
+---
+
 ## Model Configuration
 
 - Model: GPT-4
@@ -5,14 +13,6 @@
 - Temperature: default
 - Top-p: default
 - Same input text for all runs
-
----
-
-# Prompt A/B Testing Case Study
-
-This repository demonstrates an A/B test of two LLM prompts
-using the same input text about the platypus to evaluate
-output quality, structure, and stability.
 
 ---
 
