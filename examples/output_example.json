@@ -1,0 +1,24 @@
+{
+  "lead_type": "startup",
+  "intent": {
+    "primary_goal": "automate customer support workflows",
+    "urgency_level": "medium",
+    "decision_stage": "consideration"
+  },
+  "business_value": {
+    "estimated_deal_size_usd": 25000,
+    "potential_ltv_usd": 120000,
+    "priority_score": 7
+  },
+  "risk_factors": {
+    "budget_risk": "medium",
+    "churn_risk": "low",
+    "complexity_risk": "medium"
+  },
+  "recommended_action": {
+    "sales_motion": "sales_assisted",
+    "next_step": "Schedule a discovery call to clarify budget and integrations",
+    "recommended_owner": "sales"
+  },
+  "confidence": 0.87
+}
