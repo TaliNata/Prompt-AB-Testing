@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "lead_type",
+    "intent",
+    "business_value",
+    "risk_factors",
+    "recommended_action",
+    "confidence"
+  ],
+  "properties": {
+    "lead_type": {
+      "type": "string",
+      "enum": ["enterprise", "smb", "startup", "individual", "unknown"]
+    },
+    "intent": {
+      "type": "object",
+      "required": ["primary_goal", "urgency_level", "decision_stage"],
+      "properties": {
+        "primary_goal": { "type": "string" },
+        "urgency_level": { "enum": ["low", "medium", "high"] },
+        "decision_stage": { "enum": ["awareness", "consideration", "decision"] }
+      }
+    },
+    "business_value": {
+      "type": "object",
+      "required": ["estimated_deal_size_usd", "potential_ltv_usd", "priority_score"],
+      "properties": {
+        "estimated_deal_size_usd": { "type": ["number", "null"] },
+        "potential_ltv_usd": { "type": ["number", "null"] },
+        "priority_score": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "risk_factors": {
+      "type": "object",
+      "required": ["budget_risk", "churn_risk", "complexity_risk"],
+      "properties": {
+        "budget_risk": { "enum": ["low", "medium", "high", "unknown"] },
+        "churn_risk": { "enum": ["low", "medium", "high", "unknown"] },
+        "complexity_risk": { "enum": ["low", "medium", "high", "unknown"] }
+      }
+    },
+    "recommended_action": {
+      "type": "object",
+      "required": ["sales_motion", "next_step", "recommended_owner"],
+      "properties": {
+        "sales_motion": {
+          "enum": ["self_service", "sales_assisted", "enterprise_sales", "reject"]
+        },
+        "next_step": { "type": "string" },
+        "recommended_owner": {
+          "enum": ["sales", "support", "marketing", "automation"]
+        }
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}
