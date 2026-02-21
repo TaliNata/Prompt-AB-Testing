@@ -1,0 +1,16 @@
+{
+  "input_summary": "Fintech startup, integrations required, budget unclear",
+  "variant_A": {
+    "priority_score": 6,
+    "budget_risk": "medium",
+    "sales_motion": "sales_assisted",
+    "confidence": 0.82
+  },
+  "variant_B": {
+    "priority_score": 8,
+    "budget_risk": "low",
+    "sales_motion": "enterprise_sales",
+    "confidence": 0.91
+  },
+  "observed_tradeoff": "Variant B increases aggressiveness but underestimates budget risk"
+}
