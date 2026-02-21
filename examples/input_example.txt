@@ -1,0 +1,7 @@
+We are a fintech startup with around 120 employees.
+
+Looking for a solution to automate customer support workflows.
+
+We want to integrate with Salesforce and Slack.
+
+Budget is not finalized yet, but we are evaluating vendors this quarter.
